@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		651E420B6252052CE12A8663 /* libPods-CloudIMTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E30AE8F74FEBAA1A1E873F3 /* libPods-CloudIMTest.a */; };
 		836B82E61DEBC43600767A57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B82E51DEBC43600767A57 /* AppDelegate.swift */; };
 		836B82E81DEBC43700767A57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B82E71DEBC43700767A57 /* ViewController.swift */; };
 		836B82EB1DEBC43700767A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836B82E91DEBC43700767A57 /* Main.storyboard */; };
 		836B82ED1DEBC43800767A57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836B82EC1DEBC43800767A57 /* Assets.xcassets */; };
 		836B82F01DEBC43800767A57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836B82EE1DEBC43800767A57 /* LaunchScreen.storyboard */; };
+		836B82F81DEBC60500767A57 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 836B82F71DEBC60500767A57 /* Podfile */; };
+		836B82FE1DEC003E00767A57 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B82FD1DEC003E00767A57 /* ConversationViewController.swift */; };
+		836B83021DEC269F00767A57 /* ConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B83011DEC269F00767A57 /* ConversationListViewController.swift */; };
+		836B83051DEC2DE900767A57 /* conversation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836B83031DEC2DE900767A57 /* conversation.storyboard */; };
+		836B83081DEC2E1B00767A57 /* aboutUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836B83061DEC2E1B00767A57 /* aboutUs.storyboard */; };
+		836B830A1DEC2E5B00767A57 /* contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836B83091DEC2E5B00767A57 /* contacts.storyboard */; };
+		836B830D1DEC2E7600767A57 /* severce.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836B830B1DEC2E7600767A57 /* severce.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E30AE8F74FEBAA1A1E873F3 /* libPods-CloudIMTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CloudIMTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		836B82E21DEBC43600767A57 /* CloudIMTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudIMTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		836B82E51DEBC43600767A57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		836B82E71DEBC43700767A57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,16 @@
 		836B82EC1DEBC43800767A57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		836B82EF1DEBC43800767A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		836B82F11DEBC43900767A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		836B82F71DEBC60500767A57 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		836B82F91DEBD34200767A57 /* CloudIMTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudIMTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		836B82FD1DEC003E00767A57 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		836B83011DEC269F00767A57 /* ConversationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationListViewController.swift; sourceTree = "<group>"; };
+		836B83041DEC2DE900767A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/conversation.storyboard; sourceTree = "<group>"; };
+		836B83071DEC2E1B00767A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/aboutUs.storyboard; sourceTree = "<group>"; };
+		836B83091DEC2E5B00767A57 /* contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = contacts.storyboard; sourceTree = "<group>"; };
+		836B830C1DEC2E7600767A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/severce.storyboard; sourceTree = "<group>"; };
+		C78A7D1285DC1493D562741C /* Pods-CloudIMTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudIMTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudIMTest/Pods-CloudIMTest.debug.xcconfig"; sourceTree = "<group>"; };
+		D2A212498774B9D776A0C390 /* Pods-CloudIMTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudIMTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudIMTest/Pods-CloudIMTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +48,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				651E420B6252052CE12A8663 /* libPods-CloudIMTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6301954677FF73562055D5D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C78A7D1285DC1493D562741C /* Pods-CloudIMTest.debug.xcconfig */,
+				D2A212498774B9D776A0C390 /* Pods-CloudIMTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		836B82D91DEBC43500767A57 = {
 			isa = PBXGroup;
 			children = (
+				836B82F71DEBC60500767A57 /* Podfile */,
 				836B82E41DEBC43600767A57 /* CloudIMTest */,
 				836B82E31DEBC43600767A57 /* Products */,
+				6301954677FF73562055D5D8 /* Pods */,
+				A7AB4CD99CD0470427CA338B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +88,27 @@
 			children = (
 				836B82E51DEBC43600767A57 /* AppDelegate.swift */,
 				836B82E71DEBC43700767A57 /* ViewController.swift */,
+				836B82FD1DEC003E00767A57 /* ConversationViewController.swift */,
+				836B83011DEC269F00767A57 /* ConversationListViewController.swift */,
 				836B82E91DEBC43700767A57 /* Main.storyboard */,
+				836B830B1DEC2E7600767A57 /* severce.storyboard */,
+				836B83091DEC2E5B00767A57 /* contacts.storyboard */,
+				836B83061DEC2E1B00767A57 /* aboutUs.storyboard */,
+				836B83031DEC2DE900767A57 /* conversation.storyboard */,
 				836B82EC1DEBC43800767A57 /* Assets.xcassets */,
 				836B82EE1DEBC43800767A57 /* LaunchScreen.storyboard */,
 				836B82F11DEBC43900767A57 /* Info.plist */,
+				836B82F91DEBD34200767A57 /* CloudIMTest-Bridging-Header.h */,
 			);
 			path = CloudIMTest;
+			sourceTree = "<group>";
+		};
+		A7AB4CD99CD0470427CA338B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E30AE8F74FEBAA1A1E873F3 /* libPods-CloudIMTest.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 836B82F41DEBC43900767A57 /* Build configuration list for PBXNativeTarget "CloudIMTest" */;
 			buildPhases = (
+				341A5D62A347D42FEEE475CF /* [CP] Check Pods Manifest.lock */,
 				836B82DE1DEBC43600767A57 /* Sources */,
 				836B82DF1DEBC43600767A57 /* Frameworks */,
 				836B82E01DEBC43600767A57 /* Resources */,
+				717946DB22795C004F5B67A7 /* [CP] Embed Pods Frameworks */,
+				781D18A4E7D439E23FB9FF9B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +147,7 @@
 					836B82E11DEBC43600767A57 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = H9BUD39NVR;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,13 +175,66 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				836B83081DEC2E1B00767A57 /* aboutUs.storyboard in Resources */,
 				836B82F01DEBC43800767A57 /* LaunchScreen.storyboard in Resources */,
 				836B82ED1DEBC43800767A57 /* Assets.xcassets in Resources */,
+				836B82F81DEBC60500767A57 /* Podfile in Resources */,
 				836B82EB1DEBC43700767A57 /* Main.storyboard in Resources */,
+				836B830A1DEC2E5B00767A57 /* contacts.storyboard in Resources */,
+				836B830D1DEC2E7600767A57 /* severce.storyboard in Resources */,
+				836B83051DEC2DE900767A57 /* conversation.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		341A5D62A347D42FEEE475CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		717946DB22795C004F5B67A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudIMTest/Pods-CloudIMTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		781D18A4E7D439E23FB9FF9B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudIMTest/Pods-CloudIMTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		836B82DE1DEBC43600767A57 /* Sources */ = {
@@ -138,7 +242,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				836B82E81DEBC43700767A57 /* ViewController.swift in Sources */,
+				836B83021DEC269F00767A57 /* ConversationListViewController.swift in Sources */,
 				836B82E61DEBC43600767A57 /* AppDelegate.swift in Sources */,
+				836B82FE1DEC003E00767A57 /* ConversationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +265,30 @@
 				836B82EF1DEBC43800767A57 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		836B83031DEC2DE900767A57 /* conversation.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				836B83041DEC2DE900767A57 /* Base */,
+			);
+			name = conversation.storyboard;
+			sourceTree = "<group>";
+		};
+		836B83061DEC2E1B00767A57 /* aboutUs.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				836B83071DEC2E1B00767A57 /* Base */,
+			);
+			name = aboutUs.storyboard;
+			sourceTree = "<group>";
+		};
+		836B830B1DEC2E7600767A57 /* severce.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				836B830C1DEC2E7600767A57 /* Base */,
+			);
+			name = severce.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -257,26 +387,33 @@
 		};
 		836B82F51DEBC43900767A57 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C78A7D1285DC1493D562741C /* Pods-CloudIMTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = H9BUD39NVR;
 				INFOPLIST_FILE = CloudIMTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KingS.CloudIMTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CloudIMTest/CloudIMTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		836B82F61DEBC43900767A57 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2A212498774B9D776A0C390 /* Pods-CloudIMTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = H9BUD39NVR;
 				INFOPLIST_FILE = CloudIMTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KingS.CloudIMTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CloudIMTest/CloudIMTest-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -300,6 +437,7 @@
 				836B82F61DEBC43900767A57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
