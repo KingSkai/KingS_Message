@@ -13,6 +13,7 @@ class ConversationListViewController: RCConversationListViewController {
     let conVC = RCConversationViewController()
     
     @IBAction func showMenu(_ sender: UIBarButtonItem) {
+
         
         var frame = (sender.value(forKey: "view") as AnyObject).frame
         
@@ -24,7 +25,25 @@ class ConversationListViewController: RCConversationListViewController {
         ]
         
         KxMenu.show(in: self.view, from: frame!, menuItems: menuItems)
-        
+//        let items = [
+//            MenuItem(title: "客服", iconName: "服务(1)", glow: UIColor.red, index: 0),
+//            MenuItem(title: "与凯哥聊天", iconName: "会话(1)", glow: UIColor.blue, index: 1),
+//            MenuItem(title: "通讯录", iconName: "联系人(1)", glow: UIColor.yellow, index: 2),
+//            MenuItem(title: "关于", iconName: "about", glow: UIColor.gray, index: 3)
+//        ]
+//        let menue = PopMenu(frame: self.view.bounds, items: items)
+//        
+//        menue?.menuAnimationType = .netEase
+//        
+//        if (menue?.isShowed)! {
+//            return
+//        }
+////        var selectItem :MenuItem
+//        
+//        menue?.didSelectedItemCompletion = {(_ selectedItem: MenuItem!) -> Void in
+//            
+//            
+//        }
     }
 
     func ClickMenue1() {

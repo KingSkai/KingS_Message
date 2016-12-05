@@ -6,9 +6,123 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Log In View Controller-->
+        <scene sceneID="Gd3-U7-1rG">
+            <objects>
+                <viewController id="ZEH-Wc-fww" customClass="LogInViewController" customModule="CloudIMTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yJ9-Qa-iN4"/>
+                        <viewControllerLayoutGuide type="bottom" id="c2L-rj-o5p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q5D-02-YgF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="毛玻璃" translatesAutoresizingMaskIntoConstraints="NO" id="ika-Cj-fqd" userLabel="BackGroundImage">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ybt-qg-4Pd">
+                                <rect key="frame" x="0.0" y="193" width="375" height="100"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fes-gI-tIJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sn3-gr-wNG">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hG2-TK-F5R">
+                                        <rect key="frame" x="0.0" y="70" width="375" height="30"/>
+                                        <color key="backgroundColor" red="0.35146409148328506" green="0.60424784592558889" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="登录">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6Ox-ue-zem">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf8-nU-FmZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="30"/>
+                                        <state key="normal" title="新用户"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxo-S5-Kx3">
+                                        <rect key="frame" x="171.5" y="0.0" width="171.5" height="30"/>
+                                        <state key="normal" title="忘记密码"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="kmZ-O4-gF9">
+                                <rect key="frame" x="233.5" y="313" width="125.5" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自动登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeQ-z2-yt2">
+                                        <rect key="frame" x="0.0" y="0.0" width="69.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="80T-vr-zD7">
+                                        <rect key="frame" x="76.5" y="0.0" width="51" height="31"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_user" translatesAutoresizingMaskIntoConstraints="NO" id="hQX-Qf-5Jh" customClass="RoundImageView" customModule="CloudIMTest" customModuleProvider="target">
+                                <rect key="frame" x="147" y="73" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="YPP-Xw-WhN"/>
+                                    <constraint firstAttribute="width" constant="80" id="aIA-eL-qVX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hQX-Qf-5Jh" firstAttribute="centerX" secondItem="Q5D-02-YgF" secondAttribute="centerX" id="EqJ-Qo-FZg"/>
+                            <constraint firstItem="ika-Cj-fqd" firstAttribute="leading" secondItem="Q5D-02-YgF" secondAttribute="leading" id="NWq-WY-9Vz"/>
+                            <constraint firstItem="kmZ-O4-gF9" firstAttribute="top" secondItem="ybt-qg-4Pd" secondAttribute="bottom" constant="20" id="OXK-Fn-Jqz"/>
+                            <constraint firstItem="ika-Cj-fqd" firstAttribute="bottom" secondItem="c2L-rj-o5p" secondAttribute="top" id="Q2t-Sn-86x"/>
+                            <constraint firstItem="hQX-Qf-5Jh" firstAttribute="top" secondItem="yJ9-Qa-iN4" secondAttribute="bottom" constant="53" id="V20-QC-XQS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kmZ-O4-gF9" secondAttribute="trailing" id="aOp-zU-jQX"/>
+                            <constraint firstItem="6Ox-ue-zem" firstAttribute="leading" secondItem="Q5D-02-YgF" secondAttribute="leadingMargin" id="d6i-u1-bCu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Ox-ue-zem" secondAttribute="trailing" id="jW8-oa-pMA"/>
+                            <constraint firstItem="ybt-qg-4Pd" firstAttribute="top" secondItem="hQX-Qf-5Jh" secondAttribute="bottom" constant="40" id="kCe-Bk-aO5"/>
+                            <constraint firstItem="ybt-qg-4Pd" firstAttribute="leading" secondItem="Q5D-02-YgF" secondAttribute="leading" id="kDm-V0-gkn"/>
+                            <constraint firstItem="ika-Cj-fqd" firstAttribute="top" secondItem="Q5D-02-YgF" secondAttribute="top" id="m8w-Iv-EQo"/>
+                            <constraint firstItem="hQX-Qf-5Jh" firstAttribute="centerX" secondItem="ika-Cj-fqd" secondAttribute="centerX" id="oV2-SO-fNp"/>
+                            <constraint firstItem="c2L-rj-o5p" firstAttribute="top" secondItem="6Ox-ue-zem" secondAttribute="bottom" constant="20" id="por-jt-5me"/>
+                            <constraint firstAttribute="trailing" secondItem="ybt-qg-4Pd" secondAttribute="trailing" id="qhY-hl-U6C"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jcp-Mv-MGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2295.1999999999998" y="939.58020989505258"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6Gu-Ts-eK4">
             <objects>
@@ -70,4 +184,8 @@
             <point key="canvasLocation" x="-640" y="1219"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="default_user" width="150" height="150"/>
+        <image name="毛玻璃" width="750" height="1334"/>
+    </resources>
 </document>

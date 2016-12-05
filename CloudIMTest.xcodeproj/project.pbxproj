@@ -20,6 +20,8 @@
 		836B83081DEC2E1B00767A57 /* aboutUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836B83061DEC2E1B00767A57 /* aboutUs.storyboard */; };
 		836B830A1DEC2E5B00767A57 /* contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836B83091DEC2E5B00767A57 /* contacts.storyboard */; };
 		836B830D1DEC2E7600767A57 /* severce.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836B830B1DEC2E7600767A57 /* severce.storyboard */; };
+		83A684701DF55F3300189237 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A6846F1DF55F3300189237 /* LogInViewController.swift */; };
+		83A684721DF5620100189237 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A684711DF5620100189237 /* RoundImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		836B83071DEC2E1B00767A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/aboutUs.storyboard; sourceTree = "<group>"; };
 		836B83091DEC2E5B00767A57 /* contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = contacts.storyboard; sourceTree = "<group>"; };
 		836B830C1DEC2E7600767A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/severce.storyboard; sourceTree = "<group>"; };
+		83A6846F1DF55F3300189237 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		83A684711DF5620100189237 /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		C78A7D1285DC1493D562741C /* Pods-CloudIMTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudIMTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudIMTest/Pods-CloudIMTest.debug.xcconfig"; sourceTree = "<group>"; };
 		D2A212498774B9D776A0C390 /* Pods-CloudIMTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudIMTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudIMTest/Pods-CloudIMTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +94,8 @@
 				836B82E71DEBC43700767A57 /* ViewController.swift */,
 				836B82FD1DEC003E00767A57 /* ConversationViewController.swift */,
 				836B83011DEC269F00767A57 /* ConversationListViewController.swift */,
+				83A6846F1DF55F3300189237 /* LogInViewController.swift */,
+				83A684711DF5620100189237 /* RoundImageView.swift */,
 				836B82E91DEBC43700767A57 /* Main.storyboard */,
 				836B830B1DEC2E7600767A57 /* severce.storyboard */,
 				836B83091DEC2E5B00767A57 /* contacts.storyboard */,
@@ -244,7 +250,9 @@
 				836B82E81DEBC43700767A57 /* ViewController.swift in Sources */,
 				836B83021DEC269F00767A57 /* ConversationListViewController.swift in Sources */,
 				836B82E61DEBC43600767A57 /* AppDelegate.swift in Sources */,
+				83A684701DF55F3300189237 /* LogInViewController.swift in Sources */,
 				836B82FE1DEC003E00767A57 /* ConversationViewController.swift in Sources */,
+				83A684721DF5620100189237 /* RoundImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

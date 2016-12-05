@@ -1,28 +1,37 @@
 //
-//  ConversationViewController.swift
+//  LogInViewController.swift
 //  CloudIMTest
 //
-//  Created by 王凯 on 2016/11/28.
+//  Created by 王凯 on 2016/12/5.
 //  Copyright © 2016年 王凯. All rights reserved.
 //
 
 import UIKit
 
-class ConversationViewController: RCConversationViewController {
+// 扩展StoryBoard
+//extension UIView{
+//    
+//    // 使用@IBInspectable创建的属性会在storyboard的右侧属性栏中显示出来(此处需要重写setter getter方法)
+//   @IBInspectable var cornerRadius: CGFloat{
+//        get{
+//            return self.layer.cornerRadius
+//        }
+//        set{
+//            self.layer.cornerRadius = newValue
+//            self.layer.masksToBounds = (newValue > 0)
+//        }
+//    }
+//    
+//    
+//}
+
+
+class LogInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        self.targetId = "wangkai2"
-        
-//        self.userName = RCIMClient.shared().currentUserInfo.name
-        
-//        self.conversationType = .ConversationType_PRIVATE
-//        self.title = "与" + "王凯" + "对话中"
-
-        // 头像形状(原型 USER_AVATAR_CYCLE)
-        RCIM.shared().globalMessageAvatarStyle = RCUserAvatarStyle.USER_AVATAR_CYCLE
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,9 +39,7 @@ class ConversationViewController: RCConversationViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
 
-    
     /*
     // MARK: - Navigation
 
