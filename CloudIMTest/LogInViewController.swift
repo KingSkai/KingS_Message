@@ -26,14 +26,75 @@ import UIKit
 //}
 
 
-class LogInViewController: UIViewController {
+class LogInViewController: UIViewController, JSAnimatedImagesViewDataSource {
+    
+    // 背景动态图片
+    @IBOutlet weak var backGroundImageView: JSAnimatedImagesView!
+    // 头像
+    @IBOutlet weak var portrait: RoundImageView!
+    // 新用户/忘记密码模块
+    @IBOutlet weak var bottomStackView: UIStackView!
 
+    // 自动登录模块
+    @IBOutlet weak var logInStackView: UIStackView!
+    // 用户信息输入模块
+    @IBOutlet weak var userStackView: UIStackView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+//        backGroundImageView.delegate = self
+//        backGroundImageView.startAnimating()
+        backGroundImageView.dataSource = self
+        // 视图层级调整
+        sendToBack()
+        
+    }
+    
+    func sendToBack() {
+        backGroundImageView.bringSubview(toFront: portrait)
+        backGroundImageView.bringSubview(toFront: bottomStackView)
+        backGroundImageView.bringSubview(toFront: logInStackView)
+        backGroundImageView.bringSubview(toFront: userStackView)
     }
 
+//    func animatedImagesNumber(ofImages animatedImagesView: RCAnimatedImagesView!) -> UInt {
+//        return 6
+//    }
+//    
+//    func animatedImagesView(_ animatedImagesView: RCAnimatedImagesView!, imageAt index: UInt) -> UIImage! {
+//        return UIImage(named: "IMG_\(index + 1)")
+//    }
+    
+    
+    func animatedImagesNumber(ofImages animatedImagesView: JSAnimatedImagesView!) -> UInt {
+        return 6
+    }
+    
+    func animatedImagesView(_ animatedImagesView: JSAnimatedImagesView!, imageAt index: UInt) -> UIImage! {
+        return UIImage(named: "IMG_\(index + 1)")
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+//        backGroundImageView.stopAnimating()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+//        UIView.animate(withDuration: 1.0, animations: {
+//            // axis 轴 -> 将其变为垂直的
+//            self.logInStackView.axis = UILayoutConstraintAxis.vertical
+//            
+//        })
+        
+
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

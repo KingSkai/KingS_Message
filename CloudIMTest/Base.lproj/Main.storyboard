@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="06P-zf-IUy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZEH-Wc-fww">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,9 +22,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="毛玻璃" translatesAutoresizingMaskIntoConstraints="NO" id="ika-Cj-fqd" userLabel="BackGroundImage">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="akX-0P-lPa" userLabel="backGroundImageView" customClass="JSAnimatedImagesView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_user" translatesAutoresizingMaskIntoConstraints="NO" id="hQX-Qf-5Jh" customClass="RoundImageView" customModule="CloudIMTest" customModuleProvider="target">
+                                <rect key="frame" x="147" y="73" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="YPP-Xw-WhN"/>
+                                    <constraint firstAttribute="width" constant="80" id="aIA-eL-qVX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="kmZ-O4-gF9" userLabel="LogIn Stack View">
+                                <rect key="frame" x="233" y="313" width="125.5" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自动登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeQ-z2-yt2">
+                                        <rect key="frame" x="0.0" y="0.0" width="69.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.99254089593887329" green="0.97238332033157349" blue="0.98036485910415649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="80T-vr-zD7">
+                                        <rect key="frame" x="76.5" y="0.0" width="51" height="31"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6Ox-ue-zem">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf8-nU-FmZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="30"/>
+                                        <state key="normal" title="新用户">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxo-S5-Kx3">
+                                        <rect key="frame" x="171.5" y="0.0" width="171.5" height="30"/>
+                                        <state key="normal" title="忘记密码">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ybt-qg-4Pd">
                                 <rect key="frame" x="0.0" y="193" width="375" height="100"/>
                                 <subviews>
@@ -54,70 +104,32 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6Ox-ue-zem">
-                                <rect key="frame" x="16" y="617" width="343" height="30"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf8-nU-FmZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="30"/>
-                                        <state key="normal" title="新用户"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxo-S5-Kx3">
-                                        <rect key="frame" x="171.5" y="0.0" width="171.5" height="30"/>
-                                        <state key="normal" title="忘记密码"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="kmZ-O4-gF9">
-                                <rect key="frame" x="233.5" y="313" width="125.5" height="31"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自动登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeQ-z2-yt2">
-                                        <rect key="frame" x="0.0" y="0.0" width="69.5" height="31"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="80T-vr-zD7">
-                                        <rect key="frame" x="76.5" y="0.0" width="51" height="31"/>
-                                    </switch>
-                                </subviews>
-                            </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_user" translatesAutoresizingMaskIntoConstraints="NO" id="hQX-Qf-5Jh" customClass="RoundImageView" customModule="CloudIMTest" customModuleProvider="target">
-                                <rect key="frame" x="147" y="73" width="80" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="YPP-Xw-WhN"/>
-                                    <constraint firstAttribute="width" constant="80" id="aIA-eL-qVX"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="40"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="akX-0P-lPa" secondAttribute="trailing" id="4Wc-2z-qqF"/>
                             <constraint firstItem="hQX-Qf-5Jh" firstAttribute="centerX" secondItem="Q5D-02-YgF" secondAttribute="centerX" id="EqJ-Qo-FZg"/>
-                            <constraint firstItem="ika-Cj-fqd" firstAttribute="leading" secondItem="Q5D-02-YgF" secondAttribute="leading" id="NWq-WY-9Vz"/>
+                            <constraint firstItem="akX-0P-lPa" firstAttribute="top" secondItem="Q5D-02-YgF" secondAttribute="top" id="IOP-3v-oXx"/>
+                            <constraint firstItem="c2L-rj-o5p" firstAttribute="top" secondItem="akX-0P-lPa" secondAttribute="bottom" id="J2Q-AJ-cDC"/>
                             <constraint firstItem="kmZ-O4-gF9" firstAttribute="top" secondItem="ybt-qg-4Pd" secondAttribute="bottom" constant="20" id="OXK-Fn-Jqz"/>
-                            <constraint firstItem="ika-Cj-fqd" firstAttribute="bottom" secondItem="c2L-rj-o5p" secondAttribute="top" id="Q2t-Sn-86x"/>
                             <constraint firstItem="hQX-Qf-5Jh" firstAttribute="top" secondItem="yJ9-Qa-iN4" secondAttribute="bottom" constant="53" id="V20-QC-XQS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kmZ-O4-gF9" secondAttribute="trailing" id="aOp-zU-jQX"/>
                             <constraint firstItem="6Ox-ue-zem" firstAttribute="leading" secondItem="Q5D-02-YgF" secondAttribute="leadingMargin" id="d6i-u1-bCu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6Ox-ue-zem" secondAttribute="trailing" id="jW8-oa-pMA"/>
                             <constraint firstItem="ybt-qg-4Pd" firstAttribute="top" secondItem="hQX-Qf-5Jh" secondAttribute="bottom" constant="40" id="kCe-Bk-aO5"/>
                             <constraint firstItem="ybt-qg-4Pd" firstAttribute="leading" secondItem="Q5D-02-YgF" secondAttribute="leading" id="kDm-V0-gkn"/>
-                            <constraint firstItem="ika-Cj-fqd" firstAttribute="top" secondItem="Q5D-02-YgF" secondAttribute="top" id="m8w-Iv-EQo"/>
-                            <constraint firstItem="hQX-Qf-5Jh" firstAttribute="centerX" secondItem="ika-Cj-fqd" secondAttribute="centerX" id="oV2-SO-fNp"/>
                             <constraint firstItem="c2L-rj-o5p" firstAttribute="top" secondItem="6Ox-ue-zem" secondAttribute="bottom" constant="20" id="por-jt-5me"/>
+                            <constraint firstItem="akX-0P-lPa" firstAttribute="leading" secondItem="Q5D-02-YgF" secondAttribute="leading" id="qb9-MO-NBa"/>
                             <constraint firstAttribute="trailing" secondItem="ybt-qg-4Pd" secondAttribute="trailing" id="qhY-hl-U6C"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backGroundImageView" destination="akX-0P-lPa" id="jGg-9b-OOb"/>
+                        <outlet property="bottomStackView" destination="6Ox-ue-zem" id="Nk4-Oh-qAP"/>
+                        <outlet property="logInStackView" destination="kmZ-O4-gF9" id="eg1-ah-gUs"/>
+                        <outlet property="portrait" destination="hQX-Qf-5Jh" id="Bnn-lI-HGn"/>
+                        <outlet property="userStackView" destination="ybt-qg-4Pd" id="Fe6-D4-jJq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jcp-Mv-MGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -186,6 +198,5 @@
     </scenes>
     <resources>
         <image name="default_user" width="150" height="150"/>
-        <image name="毛玻璃" width="750" height="1334"/>
     </resources>
 </document>

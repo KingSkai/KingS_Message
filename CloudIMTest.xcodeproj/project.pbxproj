@@ -20,6 +20,7 @@
 		836B83081DEC2E1B00767A57 /* aboutUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836B83061DEC2E1B00767A57 /* aboutUs.storyboard */; };
 		836B830A1DEC2E5B00767A57 /* contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836B83091DEC2E5B00767A57 /* contacts.storyboard */; };
 		836B830D1DEC2E7600767A57 /* severce.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836B830B1DEC2E7600767A57 /* severce.storyboard */; };
+		836F3B831DF6B92D0078C64B /* RCAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 836F3B821DF6B92D0078C64B /* RCAnimatedImagesView.m */; };
 		83A684701DF55F3300189237 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A6846F1DF55F3300189237 /* LogInViewController.swift */; };
 		83A684721DF5620100189237 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A684711DF5620100189237 /* RoundImageView.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,8 @@
 		836B83071DEC2E1B00767A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/aboutUs.storyboard; sourceTree = "<group>"; };
 		836B83091DEC2E5B00767A57 /* contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = contacts.storyboard; sourceTree = "<group>"; };
 		836B830C1DEC2E7600767A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/severce.storyboard; sourceTree = "<group>"; };
+		836F3B811DF6B92D0078C64B /* RCAnimatedImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCAnimatedImagesView.h; sourceTree = "<group>"; };
+		836F3B821DF6B92D0078C64B /* RCAnimatedImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCAnimatedImagesView.m; sourceTree = "<group>"; };
 		83A6846F1DF55F3300189237 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		83A684711DF5620100189237 /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		C78A7D1285DC1493D562741C /* Pods-CloudIMTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudIMTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudIMTest/Pods-CloudIMTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				836B82EE1DEBC43800767A57 /* LaunchScreen.storyboard */,
 				836B82F11DEBC43900767A57 /* Info.plist */,
 				836B82F91DEBD34200767A57 /* CloudIMTest-Bridging-Header.h */,
+				836F3B811DF6B92D0078C64B /* RCAnimatedImagesView.h */,
+				836F3B821DF6B92D0078C64B /* RCAnimatedImagesView.m */,
 			);
 			path = CloudIMTest;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 				836B82E61DEBC43600767A57 /* AppDelegate.swift in Sources */,
 				83A684701DF55F3300189237 /* LogInViewController.swift in Sources */,
 				836B82FE1DEC003E00767A57 /* ConversationViewController.swift in Sources */,
+				836F3B831DF6B92D0078C64B /* RCAnimatedImagesView.m in Sources */,
 				83A684721DF5620100189237 /* RoundImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
