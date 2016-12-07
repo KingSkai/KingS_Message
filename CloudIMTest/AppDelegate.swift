@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,RCIMUserInfoDataSource {
 
     func connectServer(completion:@escaping ()->Void) {
         // 查询保存token
-        let tokenCache = UserDefaults.standard.object(forKey: "kDeviceToken") as? String
+//        let tokenCache = UserDefaults.standard.object(forKey: "kDeviceToken") as? String
         
         
         // 初始化appkey

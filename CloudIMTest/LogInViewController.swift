@@ -46,6 +46,7 @@ class LogInViewController: UIViewController, JSAnimatedImagesViewDataSource {
 
 //        backGroundImageView.delegate = self
 //        backGroundImageView.startAnimating()
+        
         backGroundImageView.dataSource = self
         // 视图层级调整
         sendToBack()
@@ -75,6 +76,13 @@ class LogInViewController: UIViewController, JSAnimatedImagesViewDataSource {
     func animatedImagesView(_ animatedImagesView: JSAnimatedImagesView!, imageAt index: UInt) -> UIImage! {
         return UIImage(named: "IMG_\(index + 1)")
         
+    }
+
+    // 页面出现
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.navigationBar.isHidden = true
+
     }
     
     override func viewWillDisappear(_ animated: Bool) {

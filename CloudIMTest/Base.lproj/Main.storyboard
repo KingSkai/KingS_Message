@@ -1,144 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZEH-Wc-fww">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Log In View Controller-->
-        <scene sceneID="Gd3-U7-1rG">
-            <objects>
-                <viewController id="ZEH-Wc-fww" customClass="LogInViewController" customModule="CloudIMTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yJ9-Qa-iN4"/>
-                        <viewControllerLayoutGuide type="bottom" id="c2L-rj-o5p"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Q5D-02-YgF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="akX-0P-lPa" userLabel="backGroundImageView" customClass="JSAnimatedImagesView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_user" translatesAutoresizingMaskIntoConstraints="NO" id="hQX-Qf-5Jh" customClass="RoundImageView" customModule="CloudIMTest" customModuleProvider="target">
-                                <rect key="frame" x="147" y="73" width="80" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="YPP-Xw-WhN"/>
-                                    <constraint firstAttribute="width" constant="80" id="aIA-eL-qVX"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="40"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="kmZ-O4-gF9" userLabel="LogIn Stack View">
-                                <rect key="frame" x="233" y="313" width="125.5" height="31"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自动登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeQ-z2-yt2">
-                                        <rect key="frame" x="0.0" y="0.0" width="69.5" height="31"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.99254089593887329" green="0.97238332033157349" blue="0.98036485910415649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="80T-vr-zD7">
-                                        <rect key="frame" x="76.5" y="0.0" width="51" height="31"/>
-                                    </switch>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6Ox-ue-zem">
-                                <rect key="frame" x="16" y="617" width="343" height="30"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf8-nU-FmZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="30"/>
-                                        <state key="normal" title="新用户">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxo-S5-Kx3">
-                                        <rect key="frame" x="171.5" y="0.0" width="171.5" height="30"/>
-                                        <state key="normal" title="忘记密码">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ybt-qg-4Pd">
-                                <rect key="frame" x="0.0" y="193" width="375" height="100"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fes-gI-tIJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sn3-gr-wNG">
-                                        <rect key="frame" x="0.0" y="35" width="375" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hG2-TK-F5R">
-                                        <rect key="frame" x="0.0" y="70" width="375" height="30"/>
-                                        <color key="backgroundColor" red="0.35146409148328506" green="0.60424784592558889" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="登录">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="akX-0P-lPa" secondAttribute="trailing" id="4Wc-2z-qqF"/>
-                            <constraint firstItem="hQX-Qf-5Jh" firstAttribute="centerX" secondItem="Q5D-02-YgF" secondAttribute="centerX" id="EqJ-Qo-FZg"/>
-                            <constraint firstItem="akX-0P-lPa" firstAttribute="top" secondItem="Q5D-02-YgF" secondAttribute="top" id="IOP-3v-oXx"/>
-                            <constraint firstItem="c2L-rj-o5p" firstAttribute="top" secondItem="akX-0P-lPa" secondAttribute="bottom" id="J2Q-AJ-cDC"/>
-                            <constraint firstItem="kmZ-O4-gF9" firstAttribute="top" secondItem="ybt-qg-4Pd" secondAttribute="bottom" constant="20" id="OXK-Fn-Jqz"/>
-                            <constraint firstItem="hQX-Qf-5Jh" firstAttribute="top" secondItem="yJ9-Qa-iN4" secondAttribute="bottom" constant="53" id="V20-QC-XQS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="kmZ-O4-gF9" secondAttribute="trailing" id="aOp-zU-jQX"/>
-                            <constraint firstItem="6Ox-ue-zem" firstAttribute="leading" secondItem="Q5D-02-YgF" secondAttribute="leadingMargin" id="d6i-u1-bCu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6Ox-ue-zem" secondAttribute="trailing" id="jW8-oa-pMA"/>
-                            <constraint firstItem="ybt-qg-4Pd" firstAttribute="top" secondItem="hQX-Qf-5Jh" secondAttribute="bottom" constant="40" id="kCe-Bk-aO5"/>
-                            <constraint firstItem="ybt-qg-4Pd" firstAttribute="leading" secondItem="Q5D-02-YgF" secondAttribute="leading" id="kDm-V0-gkn"/>
-                            <constraint firstItem="c2L-rj-o5p" firstAttribute="top" secondItem="6Ox-ue-zem" secondAttribute="bottom" constant="20" id="por-jt-5me"/>
-                            <constraint firstItem="akX-0P-lPa" firstAttribute="leading" secondItem="Q5D-02-YgF" secondAttribute="leading" id="qb9-MO-NBa"/>
-                            <constraint firstAttribute="trailing" secondItem="ybt-qg-4Pd" secondAttribute="trailing" id="qhY-hl-U6C"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="backGroundImageView" destination="akX-0P-lPa" id="jGg-9b-OOb"/>
-                        <outlet property="bottomStackView" destination="6Ox-ue-zem" id="Nk4-Oh-qAP"/>
-                        <outlet property="logInStackView" destination="kmZ-O4-gF9" id="eg1-ah-gUs"/>
-                        <outlet property="portrait" destination="hQX-Qf-5Jh" id="Bnn-lI-HGn"/>
-                        <outlet property="userStackView" destination="ybt-qg-4Pd" id="Fe6-D4-jJq"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jcp-Mv-MGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2295.1999999999998" y="939.58020989505258"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6Gu-Ts-eK4">
             <objects>
-                <tabBarController id="06P-zf-IUy" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="UITabBarController-06P-zf-IUy" id="06P-zf-IUy" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="TM3-d4-vBL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -196,7 +70,4 @@
             <point key="canvasLocation" x="-640" y="1219"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="default_user" width="150" height="150"/>
-    </resources>
 </document>
