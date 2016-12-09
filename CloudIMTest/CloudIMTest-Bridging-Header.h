@@ -7,5 +7,6 @@
 #import <KxMenu/KxMenu.h>
 #import <PopMenu/PopMenu.h>
 #import <JSAnimatedImagesView/JSAnimatedImagesView.h>
+#import <AJWValidator/AJWValidator.h>
 #import "RCAnimatedImagesView.h"
-
+#import <AVOSCloud/AVOSCloud.h>

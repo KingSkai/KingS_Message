@@ -6,6 +6,8 @@ pod 'RongCloudIMKit'
 pod 'KxMenu'
 pod 'PopMenu'
 pod 'JSAnimatedImagesView'
+pod 'AJWValidator'
+pod 'AVOSCloud'
 
 end
 

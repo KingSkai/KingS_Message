@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '381C63C6E27899681604A4F4794427F3'
+               BlueprintIdentifier = '6C725F3E9E3D5FCF7EBE7A14D05AF680'
                BlueprintName = 'Pods-CloudIMTest'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-CloudIMTest.a'>

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		651E420B6252052CE12A8663 /* libPods-CloudIMTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E30AE8F74FEBAA1A1E873F3 /* libPods-CloudIMTest.a */; };
 		8320F9D91DF80C3100B50857 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8320F9D81DF80C3100B50857 /* SwiftNotice.swift */; };
+		8320F9DB1DF8153E00B50857 /* UITextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8320F9DA1DF8153E00B50857 /* UITextBox.swift */; };
+		8369351E1DFA78C70053109F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8369351D1DFA78C70053109F /* MainViewController.swift */; };
 		836B82E61DEBC43600767A57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B82E51DEBC43600767A57 /* AppDelegate.swift */; };
 		836B82E81DEBC43700767A57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B82E71DEBC43700767A57 /* ViewController.swift */; };
 		836B82EB1DEBC43700767A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836B82E91DEBC43700767A57 /* Main.storyboard */; };
@@ -24,6 +26,7 @@
 		836F3B831DF6B92D0078C64B /* RCAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 836F3B821DF6B92D0078C64B /* RCAnimatedImagesView.m */; };
 		836F3B881DF6BD820078C64B /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836F3B871DF6BD820078C64B /* LogIn.storyboard */; };
 		836F3B8A1DF6BF940078C64B /* RegTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836F3B891DF6BF940078C64B /* RegTableViewController.swift */; };
+		8384CDA21DF90BA20019354A /* inputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384CDA11DF90BA20019354A /* inputs.swift */; };
 		83A684701DF55F3300189237 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A6846F1DF55F3300189237 /* LogInViewController.swift */; };
 		83A684721DF5620100189237 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A684711DF5620100189237 /* RoundImageView.swift */; };
 /* End PBXBuildFile section */
@@ -31,6 +34,8 @@
 /* Begin PBXFileReference section */
 		7E30AE8F74FEBAA1A1E873F3 /* libPods-CloudIMTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CloudIMTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8320F9D81DF80C3100B50857 /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
+		8320F9DA1DF8153E00B50857 /* UITextBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextBox.swift; sourceTree = "<group>"; };
+		8369351D1DFA78C70053109F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		836B82E21DEBC43600767A57 /* CloudIMTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudIMTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		836B82E51DEBC43600767A57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		836B82E71DEBC43700767A57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +55,7 @@
 		836F3B821DF6B92D0078C64B /* RCAnimatedImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCAnimatedImagesView.m; sourceTree = "<group>"; };
 		836F3B871DF6BD820078C64B /* LogIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
 		836F3B891DF6BF940078C64B /* RegTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegTableViewController.swift; sourceTree = "<group>"; };
+		8384CDA11DF90BA20019354A /* inputs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inputs.swift; sourceTree = "<group>"; };
 		83A6846F1DF55F3300189237 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		83A684711DF5620100189237 /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		C78A7D1285DC1493D562741C /* Pods-CloudIMTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudIMTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudIMTest/Pods-CloudIMTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +112,8 @@
 				83A684711DF5620100189237 /* RoundImageView.swift */,
 				83A6846F1DF55F3300189237 /* LogInViewController.swift */,
 				836F3B891DF6BF940078C64B /* RegTableViewController.swift */,
+				8384CDA11DF90BA20019354A /* inputs.swift */,
+				8369351D1DFA78C70053109F /* MainViewController.swift */,
 				836B82E91DEBC43700767A57 /* Main.storyboard */,
 				836F3B871DF6BD820078C64B /* LogIn.storyboard */,
 				836B830B1DEC2E7600767A57 /* severce.storyboard */,
@@ -119,6 +127,7 @@
 				836F3B811DF6B92D0078C64B /* RCAnimatedImagesView.h */,
 				836F3B821DF6B92D0078C64B /* RCAnimatedImagesView.m */,
 				8320F9D81DF80C3100B50857 /* SwiftNotice.swift */,
+				8320F9DA1DF8153E00B50857 /* UITextBox.swift */,
 			);
 			path = CloudIMTest;
 			sourceTree = "<group>";
@@ -262,13 +271,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8320F9DB1DF8153E00B50857 /* UITextBox.swift in Sources */,
 				836B82E81DEBC43700767A57 /* ViewController.swift in Sources */,
 				836B83021DEC269F00767A57 /* ConversationListViewController.swift in Sources */,
+				8369351E1DFA78C70053109F /* MainViewController.swift in Sources */,
 				836B82E61DEBC43600767A57 /* AppDelegate.swift in Sources */,
 				83A684701DF55F3300189237 /* LogInViewController.swift in Sources */,
 				836F3B8A1DF6BF940078C64B /* RegTableViewController.swift in Sources */,
 				836B82FE1DEC003E00767A57 /* ConversationViewController.swift in Sources */,
 				8320F9D91DF80C3100B50857 /* SwiftNotice.swift in Sources */,
+				8384CDA21DF90BA20019354A /* inputs.swift in Sources */,
 				836F3B831DF6B92D0078C64B /* RCAnimatedImagesView.m in Sources */,
 				83A684721DF5620100189237 /* RoundImageView.swift in Sources */,
 			);

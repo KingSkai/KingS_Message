@@ -45,7 +45,7 @@ class ConversationListViewController: RCConversationListViewController {
 //            
 //        }
     }
-
+    
     func ClickMenue1() {
         print("需要什么服务呢")
     }
@@ -108,8 +108,12 @@ class ConversationListViewController: RCConversationListViewController {
                 conVC.targetId = model.targetId
                 conVC.conversationType = RCConversationType.ConversationType_PRIVATE
                 conVC.title = model.conversationTitle
+        
+        self.tabBarController?.tabBar.isHidden = true;
+
+        self.navigationController?.pushViewController(conVC, animated: true)
         // 来自storyBoard的自定义转场
-        self.performSegue(withIdentifier: "tapOnCell", sender: self)
+//        self.performSegue(withIdentifier: "tapOnCell", sender: self)
     }
     
     override func didReceiveMemoryWarning() {
@@ -119,7 +123,7 @@ class ConversationListViewController: RCConversationListViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        self.tabBarController?.tabBar.isHidden = false
+        self.tabBarController?.tabBar.isHidden = true
     }
     
     // MARK: - Navigation

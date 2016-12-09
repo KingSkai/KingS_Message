@@ -40,7 +40,24 @@ class LogInViewController: UIViewController, JSAnimatedImagesViewDataSource {
     // 用户信息输入模块
     @IBOutlet weak var userStackView: UIStackView!
     
+    @IBOutlet weak var textName: UITextField!
+    @IBOutlet weak var textPass: UITextField!
     
+    @IBOutlet weak var btnLog: UIButton!
+    
+    @IBAction func actionLog(_ sender: Any) {
+
+        self.performSegue(withIdentifier: "toConversationList", sender: self)
+        
+    }
+//    @IBAction func logAction(_ sender: Any) {
+//        
+////        AppDelegate.sharedAppDelegate().enterMainUI()
+//        
+//        
+////        ((UIApplication.shared.delegate) as! AppDelegate).enterMainUI();
+//        
+//    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -109,14 +126,19 @@ class LogInViewController: UIViewController, JSAnimatedImagesViewDataSource {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+//        navigationController?.setNavigationBarHidden(true, animated: true)
+//        
+//        // segue 即为下一个视图控制区
+//        let dest = segue.destination as! ViewController
+        
     }
-    */
+ 
 
 }

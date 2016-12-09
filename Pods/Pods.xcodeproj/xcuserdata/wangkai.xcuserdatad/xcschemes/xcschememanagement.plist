@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AJWValidator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AVOSCloud.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JSAnimatedImagesView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,7 +52,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>381C63C6E27899681604A4F4794427F3</key>
+		<key>24EA3ACD1D2270F03575C18A2AA8FE40</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4A4673C0950D3943F67F1AC35286674C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,7 +67,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7E919F874C612ED7E4E5176A9FD3A2F4</key>
+		<key>6C725F3E9E3D5FCF7EBE7A14D05AF680</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>73615AB1195988E96A2149E6ED019E40</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,17 +82,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>B6B4FA78A87AECE0EA27F2DED689190F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B78398A5EE5D69820E54297C0AC6F42E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>BB658585BF9CF06C3CC471ECC82B9D08</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CCD5D557E302157C93BBD726D0497DB4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E5EEAFEE87C7B676895C92A513BA88D8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -23,13 +23,13 @@
                             <tableViewSection headerTitle="必填" id="1Fc-JU-XNn">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="chi-EA-noP">
-                                        <rect key="frame" x="0.0" y="55" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="chi-EA-noP" id="a96-vd-pci">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="新用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o2q-WJ-a5W">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="新用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o2q-WJ-a5W" customClass="UITextBox" customModule="CloudIMTest" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="6" width="315" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="INX-1z-f2K"/>
@@ -47,13 +47,13 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="LbY-DQ-wyr">
-                                        <rect key="frame" x="0.0" y="99" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="100" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LbY-DQ-wyr" id="GuK-fR-Rpq">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DsT-iZ-kGK">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DsT-iZ-kGK" customClass="UITextBox" customModule="CloudIMTest" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="7" width="315" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="wk5-ra-7Tz"/>
@@ -71,13 +71,13 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="UfL-tw-Bmo">
-                                        <rect key="frame" x="0.0" y="143" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="144" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UfL-tw-Bmo" id="Bve-id-RFV">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="邮箱" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BHD-5n-UFb">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="邮箱" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BHD-5n-UFb" customClass="UITextBox" customModule="CloudIMTest" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="7" width="315" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="r4H-IV-C7F"/>
@@ -99,13 +99,13 @@
                             <tableViewSection headerTitle="选填" id="nAE-GC-NJI">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="g6V-uQ-dmE">
-                                        <rect key="frame" x="0.0" y="243" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="244" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g6V-uQ-dmE" id="TGA-kw-zuh">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="所在地区" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nh2-5K-vfn">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="所在地区" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nh2-5K-vfn" customClass="UITextBox" customModule="CloudIMTest" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="6" width="315" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="pSA-BW-j2b"/>
@@ -123,13 +123,13 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7y3-EM-Sng">
-                                        <rect key="frame" x="0.0" y="287" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="288" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7y3-EM-Sng" id="Pib-px-Jlb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码提示问题" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EbL-zB-1mn">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码提示问题" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EbL-zB-1mn" customClass="UITextBox" customModule="CloudIMTest" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="6" width="315" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="6xA-qL-QTq"/>
@@ -147,13 +147,13 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2ef-pN-VfR">
-                                        <rect key="frame" x="0.0" y="331" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="332" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2ef-pN-VfR" id="Khr-we-2HN">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码提示问题答案" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cFC-fn-tqk">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码提示问题答案" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cFC-fn-tqk" customClass="UITextBox" customModule="CloudIMTest" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="6" width="315" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="pPx-WR-z7Z"/>
@@ -188,6 +188,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="answer" destination="cFC-fn-tqk" id="Y5Y-Ej-x08"/>
+                        <outlet property="doneButton" destination="bvQ-5c-7MF" id="hm2-5m-5K6"/>
                         <outlet property="mail" destination="BHD-5n-UFb" id="D2s-oz-urC"/>
                         <outlet property="pass" destination="DsT-iZ-kGK" id="LTP-rT-z2p"/>
                         <outlet property="question" destination="EbL-zB-1mn" id="bBB-H1-HD5"/>
@@ -237,7 +238,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="kmZ-O4-gF9" userLabel="LogIn Stack View">
-                                <rect key="frame" x="233" y="357" width="125.5" height="31"/>
+                                <rect key="frame" x="233.5" y="357" width="125.5" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自动登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeQ-z2-yt2">
                                         <rect key="frame" x="0.0" y="0.0" width="69.5" height="31"/>
@@ -296,6 +297,9 @@
                                                 <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="actionLog:" destination="ZEH-Wc-fww" eventType="touchUpInside" id="HOB-ja-bFI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -322,8 +326,11 @@
                     <connections>
                         <outlet property="backGroundImageView" destination="akX-0P-lPa" id="jGg-9b-OOb"/>
                         <outlet property="bottomStackView" destination="6Ox-ue-zem" id="Nk4-Oh-qAP"/>
+                        <outlet property="btnLog" destination="hG2-TK-F5R" id="M2U-ur-jky"/>
                         <outlet property="logInStackView" destination="kmZ-O4-gF9" id="eg1-ah-gUs"/>
                         <outlet property="portrait" destination="hQX-Qf-5Jh" id="Bnn-lI-HGn"/>
+                        <outlet property="textName" destination="Fes-gI-tIJ" id="W43-lE-fxH"/>
+                        <outlet property="textPass" destination="Sn3-gr-wNG" id="006-eL-ysP"/>
                         <outlet property="userStackView" destination="ybt-qg-4Pd" id="Fe6-D4-jJq"/>
                         <segue destination="iNG-YU-2yd" kind="show" identifier="toConversationList" id="OU8-LI-YTr"/>
                     </connections>
@@ -338,7 +345,7 @@
                 <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UITabBarController-06P-zf-IUy" id="iNG-YU-2yd" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUJ-88-mDr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1149" y="830"/>
+            <point key="canvasLocation" x="-1331" y="965"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tl6-C0-PIP">

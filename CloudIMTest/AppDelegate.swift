@@ -12,7 +12,25 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate,RCIMUserInfoDataSource {
 
     var window: UIWindow?
+    
+    
+ 
 
+    
+    
+    func enterMainUI() {
+        
+        let list = ConversationListViewController()
+        let navi = UINavigationController(rootViewController: list)
+        self.window?.rootViewController = navi;
+//         * root = [[TarBarController alloc]init];
+//        self.window.rootViewController = root;
+//        let tabBar = MainViewController()
+//        self.window?.rootViewController = tabBar
+        
+    }
+    
+    
     // 根据userid返回用户信息(RCIMUserInfoDataSource的代理方法,必须实现)
     func getUserInfo(withUserId userId: String!, completion: ((RCUserInfo?) -> Void)!) {
         
@@ -70,6 +88,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,RCIMUserInfoDataSource {
         // 设置用户信息提供者为自己 AppDelegate (设置代理人为自己)
         RCIM.shared().userInfoDataSource = self
         
+        // 获得LeanCloud授权
+        AVOSCloud.setApplicationId("NAHcoLCQRarDyjUq1dXu3NVl-gzGzoHsz", clientKey: "Lz33yNJAbLnCz8T6MoiQ3vJL")
         
         return true
     }
