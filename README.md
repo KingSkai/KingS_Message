@@ -1,5 +1,2 @@
 # KingS_Message
-
-version.1 除此上传,大致界面
-
-version.2 UI调整 引入 Inspectable,Designable,StackView
+基于融云的即时通讯和LeanCloud的数据存储完成的相对完善的聊天类小Demo
