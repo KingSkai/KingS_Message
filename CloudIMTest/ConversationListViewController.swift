@@ -86,11 +86,8 @@ class ConversationListViewController: RCConversationListViewController {
             // 从数据库中重新读取会话列表数据，并刷新会话列表
             self.refreshConversationTableViewIfNeeded()
         }
-        
-        
-        
     }
-
+    
     // 对话列表点击方法
     override func onSelectedTableRow(_ conversationModelType: RCConversationModelType, conversationModel model: RCConversationModel!, at indexPath: IndexPath!) {
         
@@ -110,7 +107,7 @@ class ConversationListViewController: RCConversationListViewController {
                 conVC.title = model.conversationTitle
         
         self.tabBarController?.tabBar.isHidden = true;
-
+        
         self.navigationController?.pushViewController(conVC, animated: true)
         // 来自storyBoard的自定义转场
 //        self.performSegue(withIdentifier: "tapOnCell", sender: self)

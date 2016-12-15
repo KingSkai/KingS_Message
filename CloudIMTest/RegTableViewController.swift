@@ -50,8 +50,6 @@ class RegTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
-
         self.navigationController?.navigationBar.isHidden = false
         self.title = "新用户注册"
         

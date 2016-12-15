@@ -14,12 +14,11 @@ class MainViewController: UITabBarController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        let conVC = ConversationListViewController()
-        let firstNavi = UINavigationController(rootViewController: conVC)
+        //let conVC = ConversationListViewController()
         
+       // let firstNavi = UINavigationController(rootViewController: conVC)
         
-        
-        self.viewControllers = [firstNavi]
+       // self.viewControllers = [firstNavi]
         
     }
 
