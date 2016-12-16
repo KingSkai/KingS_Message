@@ -20,13 +20,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate,RCIMUserInfoDataSource {
     
     func enterMainUI() {
         
-        let list = ConversationListViewController()
-        let navi = UINavigationController(rootViewController: list)
-        self.window?.rootViewController = navi;
-//         * root = [[TarBarController alloc]init];
-//        self.window.rootViewController = root;
-//        let tabBar = MainViewController()
-//        self.window?.rootViewController = tabBar
+//        let list = ConversationListViewController()
+//        let navi = UINavigationController(rootViewController: list)
+//        self.window?.rootViewController = navi;
+
+        let story = UIStoryboard.init(name: "firstStoryBoard", bundle: nil)
+        let tabBarC : UITabBarController = story.instantiateViewController(withIdentifier: "tabbarController") as! UITabBarController;
+        self.window?.rootViewController = tabBarC
+
+//        let story = UIStoryboard.init(name: "Main", bundle: nil)
+//        let tabBarC : UITabBarController = story.instantiateViewController(withIdentifier: "UITabBarController-06P-zf-IUy") as! UITabBarController;
+//        self.window?.rootViewController = tabBarC
+        
         
     }
     
@@ -90,6 +95,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,RCIMUserInfoDataSource {
         
         // 获得LeanCloud授权
         AVOSCloud.setApplicationId("NAHcoLCQRarDyjUq1dXu3NVl-gzGzoHsz", clientKey: "Lz33yNJAbLnCz8T6MoiQ3vJL")
+        
+        
         
         return true
     }

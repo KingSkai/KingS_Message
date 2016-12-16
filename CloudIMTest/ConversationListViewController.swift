@@ -65,6 +65,13 @@ class ConversationListViewController: RCConversationListViewController {
         super.viewDidLoad()
         
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
+
+        self.conversationListTableView.separatorStyle = .none
+//        self.conversationListTableView.estimatedRowHeight = 60
+//        self.conversationListTableView.rowHeight = UITableViewAutomaticDimension
+//        self.conversationListTableView.style = UITableViewStyle.grouped
+        
+        
         
         // 闭包 - 回调
         appDelegate?.connectServer {
@@ -86,8 +93,11 @@ class ConversationListViewController: RCConversationListViewController {
             // 从数据库中重新读取会话列表数据，并刷新会话列表
             self.refreshConversationTableViewIfNeeded()
         }
+        
+        
+        
     }
-    
+
     // 对话列表点击方法
     override func onSelectedTableRow(_ conversationModelType: RCConversationModelType, conversationModel model: RCConversationModel!, at indexPath: IndexPath!) {
         
@@ -107,7 +117,7 @@ class ConversationListViewController: RCConversationListViewController {
                 conVC.title = model.conversationTitle
         
         self.tabBarController?.tabBar.isHidden = true;
-        
+
         self.navigationController?.pushViewController(conVC, animated: true)
         // 来自storyBoard的自定义转场
 //        self.performSegue(withIdentifier: "tapOnCell", sender: self)
@@ -120,7 +130,7 @@ class ConversationListViewController: RCConversationListViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        self.tabBarController?.tabBar.isHidden = true
+        self.tabBarController?.tabBar.isHidden = false
     }
     
     // MARK: - Navigation

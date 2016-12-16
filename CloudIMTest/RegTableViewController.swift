@@ -29,10 +29,7 @@ class RegTableViewController: UITableViewController {
     func checkRequareField() {
         for text in logInTextFields {
             if (text.text?.isEmpty)!{
-//                self.successNotice("必填项为空")
-                // 三方菊花类
                 self.errorNotice("必填项为空")
-
             }
             
             let regex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.+[A-Za-z]{2,4}"
@@ -49,6 +46,8 @@ class RegTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+
 
         self.navigationController?.navigationBar.isHidden = false
         self.title = "新用户注册"
@@ -154,25 +153,30 @@ class RegTableViewController: UITableViewController {
                 //用户注册
                 user.saveInBackground({ (succeed, error) -> Void in
                     if succeed {
+                        
                         self.successNotice("注册成功")
-                        self.navigationController?.popViewController(animated: true)
+ 
+                        // 延迟2S退出
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: { 
+                            
+                            self.navigationController?.popViewController(animated: true)
+                            
+                        })
                         
                     } else {
                         print((error?.localizedDescription)! as String)
                     }
                 })
-                
             }
         }
-
-        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
-
+    
     // MARK: - Table view data source
 
 //    override func numberOfSections(in tableView: UITableView) -> Int {
